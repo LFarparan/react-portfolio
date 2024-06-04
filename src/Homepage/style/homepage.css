@@ -1,0 +1,42 @@
+*{
+    --borderguide: 1px solid white;
+    /* --borderguide: none; */
+}
+
+.header{
+    background-image: var(--bg1);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    border: var(--borderguide);
+}
+
+.themecon{
+    border: var(--borderguide);
+    z-index: 90;
+    width: 3rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: sticky;
+    top: 1rem;
+    left: 1rem;
+    background-color: var(--lightcol);
+    transition: background-color .4s ease-out;
+
+}
+
+.themecon:hover{
+    background-color: var(--mediumcol);
+}
+
+.theme{
+    width: 2.5rem;
+    filter: var(--theme);
+    user-select: none;
+    -webkit-user-drag: none;
+}
