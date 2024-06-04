@@ -1,0 +1,61 @@
+/* 
+121446
+black       #0F102A
+sky blue    #19B8E1
+dark blue   #242C7D
+blue        #1183C5
+*/
+
+/* 
+black       #5b308c
+sky red     #FB736B
+dark blue   #D33867
+red         #EC5B64
+*/
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  --borderguide: 1px white solid;
+  font-family: "Rubik", sans-serif;
+  font-weight: 300;
+  color: #f3f3f3;
+  --borderguide: none;
+}
+
+:root.cold{
+  --blackcol: #121446;
+  --lightcol: #19B8E1;
+  --mediumcol: #1183C5;
+  --darkcol: #313a9f;
+  color: #f0ffff;
+  --img1 : url('../images/coldwave1.svg');
+  --img2 : url("../images/coldwave2.svg");
+  --img3 : url("../images/coldwave3.svg");
+  --bg1 : url("../images/coldbackground.png");
+  --border1: url('../images/coldborder1.svg');
+  --border2: url('../images/coldborder2.svg');
+  --border3: url('../images/coldborder3.svg');
+  --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
+  --themenew :  invert(64%) sepia(82%) saturate(1394%) hue-rotate(152deg) brightness(90%) contrast(96%);
+
+}
+
+:root.warm{
+  --blackcol: #5b308c;
+  --lightcol: #FB736B;
+  --mediumcol:#EC5B64;
+  --darkcol:  #D33867;
+  color: azure;
+  --img1 : url('../images/warmwave1.svg');
+  --img2 : url('../images/warmwave2.svg');
+  --img3 : url('../images/warmwave3.svg');
+  --bg1 : url('../images/warmbackground.png');
+  --border1: url('../images/warmborder1.svg');
+  --border2: url('../images/warmborder2.svg');
+  --border3: url('../images/warmborder3.svg');
+  --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
+  --themenew :  invert(55%) sepia(13%) saturate(2480%) hue-rotate(314deg) brightness(107%) contrast(97%);
+
+}
