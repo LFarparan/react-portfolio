@@ -1,6 +1,6 @@
 *{
     --borderguide: 1px solid white;
-    /* --borderguide: none; */
+    --borderguide: none;
 }
 
 .header{
@@ -50,6 +50,8 @@ p.navigate:hover{
     border: var(--borderguide);
     width: 90vw;
     margin: auto;
+    min-height: 70vh;
+    overflow: hidden;
 }
 
 .greetbox{
@@ -57,18 +59,18 @@ p.navigate:hover{
     flex-direction: column;
     justify-content: center;
     border: var(--borderguide);
-    min-height: 70vh;
+    min-height: 35vh;
 }
 
 h1.hello{
-    font-size: 36px;
+    font-size: max(32px, 2.5vw);
 }
 
 h1.name{
     font-weight: 800;
-    font-size: 36px;
+    font-size: max(33px, 2.5vw);
     user-select: none;
-    animation: colorchange 13s linear infinite;
+    animation: colorchange 10s linear infinite;
 }
 
 @keyframes colorchange {
@@ -82,12 +84,56 @@ h1.name{
 p.greetdescription{
     width: clamp(200px, 80vw, 530px);;
     margin-top: 3vh;
+    font-size: max(14px, 1.1vw);
 }
 
 .blobbox{
-    overflow: hidden;
     border: var(--borderguide);
     min-width: 50%;
-    min-height: 70vh;
+    min-height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+
+.headfoot{
+    z-index: 30;
+    width: min(100vw, 100%);
+    aspect-ratio: 5 / 1;
+    border: var(--borderguide);
+    background-image: var(--img1);
+    background-size: auto 105%;
+    background-repeat: no-repeat;
+    animation: wavefade 16s infinite;
+    transition: transform ease-in-out;
+    position: absolute;
+}
+
+@keyframes wavefade {
+    0%{
+        background-image: var(--img1);
+        transform: translateY(-35%);
+    }
+    20%{
+        transform: translateY(-40%);
+    }
+    33%{
+        background-image: var(--img2);
+        transform: translateY(-45%);
+    }
+    50%{
+        transform: translateY(-40%);
+    }
+    67%{
+        background-image: var(--img3);
+        transform: translateY(-45%);
+    }
+    83%{
+        transform: translateY(-40%);
+    }
+    100%{
+        background-image: var(--img1);
+        transform: translateY(-35%);
+    }
 }

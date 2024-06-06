@@ -29,9 +29,9 @@ red         #EC5B64
   --darkcol: #313a9f;
   color: #f0ffff;
   --img1 : url('./Homepage/assets/coldwave1.svg');
-  --img2 : url("./Homepage/assets/coldwave2.svg");
-  --img3 : url("./Homepage/assets/coldwave3.svg");
-  --bg1 : url("./Homepage/assets/coldbackground.png");
+  --img2 : url('./Homepage/assets/coldwave2.svg');
+  --img3 : url('./Homepage/assets/coldwave3.svg');
+  --bg1 : url('./Homepage/assets/coldbackground.png');
   --border1: url('./Homepage/assets/coldborder1.svg');
   --border2: url('./Homepage/assets/coldborder2.svg');
   --border3: url('./Homepage/assets/coldborder3.svg');
@@ -61,6 +61,7 @@ red         #EC5B64
 body{
   overflow-x: hidden;
   width: 100vw;
+  background-color: var(--darkcol);
 }
 
 .themecon{

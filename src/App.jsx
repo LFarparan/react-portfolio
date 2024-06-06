@@ -2,6 +2,7 @@ import Homepage from "./Homepage"
 import { useState, createContext } from "react"
 import snowflake from './Homepage/assets/snowflake.svg'
 import fire from './Homepage/assets/fire.svg'
+import Projects from "./Projects"
 
 export const TempContext = createContext();
 
@@ -19,9 +20,9 @@ function App() {
       <div className="themecon" onClick={themeChange}>
         <img src={widget} alt="theme-button" className="theme"/>
       </div>
-      <TempContext.Provider value={{ temperature, setTemperature }}>
+      <TempContext.Provider value={{ temperature, setTemperature, widget, setWidget }}>
         <Homepage/>
-        <Homepage/>
+        <Projects/>
       </TempContext.Provider>
       
     </div>

@@ -1,0 +1,93 @@
+*{
+    --borderguide: 1px solid white;
+    --borderguide: none;
+}
+
+.blobcon{
+    border: var(--borderguide);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadein 2s forwards ease-out;
+    z-index: 10;
+    width: clamp(250px, 80vw, 500px);
+    height: 50vh;
+
+}
+
+@keyframes fadein {
+    0%{
+        transform:scale(.7);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-0%) scale(1);
+        opacity: 1;
+    }
+}
+
+.theme-blobcon{
+    border-radius: 40%;
+    display: flex;
+    border: var(--borderguide);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    text-align: center;
+    z-index: 21;
+    margin: 0 12vw 0 12vw;
+    font-size: max(1rem, 1.8vw);
+    width: max(200px,23vw);
+    aspect-ratio: 1 / .9;
+    animation: wobble 15s infinite linear;
+}
+
+.theme-icon{
+    filter: var(--theme);
+    width: max(180px ,16vw);
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+p.clickme{
+    font-weight: 800;
+}
+
+@keyframes wobble {
+    0%{ transform: skewX(0deg) }
+    30%{ transform: skewX(8deg) }
+    50%{ transform: skewX(0deg) }
+    75%{ transform: skewX(-8deg) }
+    100%{ transform: skewX(0deg) }
+}
+
+
+.blob{
+    position: absolute;
+    width: max(350px,33vw);
+    fill: var(--lightcol);
+    transition: fill .6s;
+    animation: blobspin 20s reverse ease-in infinite; 
+    z-index: 20;
+}
+
+.blobglow {
+    fill: var(--mediumcol)
+}
+
+.slow{
+    animation: blobspin 30s alternate-reverse infinite;
+}
+
+.slower{
+    animation: blobspin 25s linear infinite;
+}
+
+
+@keyframes blobspin {
+    0%{ transform: rotate(0deg) scale(1) }
+    40%{ transform: rotate(150deg) scale(.8) }
+    100%{ transform: rotate(360deg) scale(1) }
+}
