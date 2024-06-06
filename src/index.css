@@ -17,8 +17,7 @@ red         #EC5B64
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  --borderguide: 1px white solid;
-  font-family: "Rubik", sans-serif;
+  font-family: "LXGW WenKai TC", cursive;
   font-weight: 300;
   color: #f3f3f3;
 }
@@ -38,7 +37,7 @@ red         #EC5B64
   --border3: url('./Homepage/assets/coldborder3.svg');
   --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
   --themenew :  invert(64%) sepia(82%) saturate(1394%) hue-rotate(152deg) brightness(90%) contrast(96%);
-
+  position: relative;
 }
 
 .warm{
@@ -56,10 +55,30 @@ red         #EC5B64
   --border3: url('./Homepage/assets/warmborder3.svg');
   --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
   --themenew :  invert(55%) sepia(13%) saturate(2480%) hue-rotate(314deg) brightness(107%) contrast(97%);
-
+  position: relative;
 }
 
 body{
-  overflow: hidden;
+  overflow-x: hidden;
   width: 100vw;
+}
+
+.themecon{
+  border: var(--borderguide);
+  z-index: 90;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  position: sticky;
+  top: 1rem;
+  left: 1rem;
+  background-color: var(--lightcol);
+  transition: background-color .4s ease-out;
+}
+
+.themecon:hover{
+  background-color: var(--mediumcol);
 }

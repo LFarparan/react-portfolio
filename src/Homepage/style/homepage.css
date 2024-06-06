@@ -11,27 +11,8 @@
     width: 100vw;
     min-height: 100vh;
     border: var(--borderguide);
-}
-
-.themecon{
-    border: var(--borderguide);
-    z-index: 90;
-    width: 3rem;
-    height: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    position: sticky;
-    top: 1rem;
-    left: 1rem;
-    background-color: var(--lightcol);
-    transition: background-color .4s ease-out;
-
-}
-
-.themecon:hover{
-    background-color: var(--mediumcol);
+    bottom: 3rem;
+    z-index: 10;
 }
 
 .theme{
@@ -39,4 +20,74 @@
     filter: var(--theme);
     user-select: none;
     -webkit-user-drag: none;
+}
+
+.navigation{
+    display: flex;
+    justify-content: flex-end;
+    gap: 5%;
+    border: var(--borderguide);
+    width: 60vw;
+    margin: auto;
+    padding: 1.7rem;
+}
+
+p.navigate{
+    font-weight: 600;
+    border: var(--borderguide);
+    text-align: center;
+    transition: transform .1s ease-in;
+}
+
+p.navigate:hover{
+    transform: scale(1.05);
+}
+
+.homecon{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border: var(--borderguide);
+    width: 90vw;
+    margin: auto;
+}
+
+.greetbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: var(--borderguide);
+    min-height: 70vh;
+}
+
+h1.hello{
+    font-size: 36px;
+}
+
+h1.name{
+    font-weight: 800;
+    font-size: 36px;
+    user-select: none;
+    animation: colorchange 13s linear infinite;
+}
+
+@keyframes colorchange {
+    0%{ color: eeeefc }
+    15%{ color: var(--lightcol) }
+    50%{ color: var(--darkcol) }
+    85%{ color: var(--mediumcol) }
+    100%{ color: eeeefc }
+}
+
+p.greetdescription{
+    width: clamp(200px, 80vw, 530px);;
+    margin-top: 3vh;
+}
+
+.blobbox{
+    overflow: hidden;
+    border: var(--borderguide);
+    min-width: 50%;
+    min-height: 70vh;
+
 }
