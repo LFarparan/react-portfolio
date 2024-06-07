@@ -36,7 +36,7 @@ export default function Contact() {
                         </a>
                     </div>
                     <div className="gmail">
-                        <a href="mailto:aguinaldo.farparan@gmail.com" target='_blank'>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=aguinaldo.farparan@gmail.com" target='_blank'>
                             <img src={gmail} alt="github-icon" id='gmail' 
                                 onMouseEnter={()=>{setHovertext('Email me')}}
                                 onMouseLeave={()=>{setHovertext(' ')}}/>

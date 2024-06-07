@@ -31,7 +31,7 @@ h2.contactme{
     font-weight: 800;
     border: var(--borderguide);
     margin-top: 2rem;
-    transition: transform .4s ease;
+    transition: transform .3s ease;
 }
 
 .contactoptions{
@@ -65,7 +65,7 @@ h3.social{
 #github, #linkedin, #gmail {
     width: 40px;
     filter: var(--themenew);
-    transition: transform .8s ease, filter .8s ease;
+    transition: transform .6s ease, filter .6s ease;
 
 }
 
