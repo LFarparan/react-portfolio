@@ -72,7 +72,7 @@ h1.hello{
 
 h1.name{
     font-weight: 800;
-    font-size: max(33px, 2.5vw);
+    font-size: max(31px, 2.5vw);
     user-select: none;
     animation: colorchange 10s linear infinite;
 }
