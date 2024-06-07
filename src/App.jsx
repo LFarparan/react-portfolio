@@ -21,7 +21,7 @@ function App() {
       <div className="themecon" onClick={themeChange}>
         <img src={widget} alt="theme-button" className="theme"/>
       </div>
-      <TempContext.Provider value={{ temperature, setTemperature, widget, setWidget }}>
+      <TempContext.Provider value={{ temperature, setTemperature, widget, setWidget}}>
         <Homepage/>
         <Projects/>
         <About/>

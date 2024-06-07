@@ -2,7 +2,7 @@
     --borderguide: 1px solid white;
 } */
 
-.about{
+#about{
     width: max(100%, 100vw);
     border: var(--borderguide);
     background-image: var(--bg1);

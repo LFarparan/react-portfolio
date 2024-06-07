@@ -8,8 +8,8 @@ export default function Homepage() {
     <>
       <div className='header'>
         <div className='navigation'>
-          <p className="navigate">PROJECTS</p>
-          <p className="navigate">ABOUT ME</p>
+          <a href="#projects" className="navigate">PROJECTS</a>
+          <a href="#about" className="navigate">ABOUT ME</a>
         </div>
         <div className="homecon">
           <div className="greetbox">

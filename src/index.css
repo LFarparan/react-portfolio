@@ -26,6 +26,10 @@ red         #EC5B64
   background-color: var(--blackcol);
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .cold, .warm{
   overflow-x: clip;
   position: relative;

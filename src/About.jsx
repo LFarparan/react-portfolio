@@ -14,7 +14,7 @@ export default function About(){
     }, [temperature])
 
   return (
-    <div className='about'>
+    <section id='about'>
         <div className="aboutbox">
             <img src={portrait} className='portrait' alt="my-portrait"/>
             <div className="abouttext">
@@ -30,6 +30,6 @@ export default function About(){
             </div>
         </div>
         <Contact/>
-    </div>
+    </section>
   )
 }
