@@ -33,7 +33,6 @@
     text-align: center;
     z-index: 21;
     margin: 0 12vw 0 12vw;
-    font-size: max(1rem, 1.8vw);
     width: max(200px,23vw);
     aspect-ratio: 1 / .9;
     animation: wobble 15s infinite linear;
@@ -49,6 +48,7 @@
 p.clickme{
     font-weight: 800;
     transition: opacity .8s ease;
+    font-size: max(1.1rem, 1.8vw);
 }
 
 @keyframes wobble {

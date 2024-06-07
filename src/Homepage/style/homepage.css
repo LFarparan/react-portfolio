@@ -1,7 +1,7 @@
-*{
+/* *{
     --borderguide: 1px solid white;
     --borderguide: none;
-}
+} */
 
 .header{
     background-image: var(--bg1);
@@ -44,6 +44,7 @@ p.navigate{
 
 p.navigate:hover{
     transform: scale(1.05);
+    font-weight: 800;
 }
 
 .homecon{

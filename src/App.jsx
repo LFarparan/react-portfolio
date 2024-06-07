@@ -3,6 +3,7 @@ import { useState, createContext } from "react"
 import snowflake from './Homepage/assets/snowflake.svg'
 import fire from './Homepage/assets/fire.svg'
 import Projects from "./Projects"
+import About from "./About"
 
 export const TempContext = createContext();
 
@@ -23,6 +24,7 @@ function App() {
       <TempContext.Provider value={{ temperature, setTemperature, widget, setWidget }}>
         <Homepage/>
         <Projects/>
+        <About/>
       </TempContext.Provider>
       
     </div>

@@ -22,6 +22,10 @@ red         #EC5B64
   color: #f3f3f3;
 }
 
+#root{
+  background-color: var(--blackcol);
+}
+
 .cold{
   --blackcol: #121446;
   --lightcol: #19B8E1;
@@ -38,6 +42,7 @@ red         #EC5B64
   --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
   --themenew :  invert(64%) sepia(82%) saturate(1394%) hue-rotate(152deg) brightness(90%) contrast(96%);
   position: relative;
+  background-color: var(--blackcol);
 }
 
 .warm{
@@ -56,6 +61,7 @@ red         #EC5B64
   --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
   --themenew :  invert(55%) sepia(13%) saturate(2480%) hue-rotate(314deg) brightness(107%) contrast(97%);
   position: relative;
+  background-color: var(--blackcol);
 }
 
 body{
