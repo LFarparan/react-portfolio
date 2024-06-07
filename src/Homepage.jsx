@@ -16,7 +16,7 @@ export default function Homepage() {
             <h1 className='hello'>Hello, my name is</h1>
             <h1 className='name'>LEONARD FARPARAN</h1>
             <p className="greetdescription">
-              I'm an aspiring Web developer with a specializes on JavaScript 
+              I'm an aspiring Web developer who specializes on JavaScript 
               libraries and frameworks, and I have a keen interest in learning 
               new technologies.
             </p>
