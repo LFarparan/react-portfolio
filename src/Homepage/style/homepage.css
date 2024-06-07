@@ -29,14 +29,17 @@
     border: var(--borderguide);
     width: 60vw;
     margin: auto;
-    padding: 1.7rem;
+    padding: 1.7rem 1px;
 }
 
 p.navigate{
     font-weight: 600;
     border: var(--borderguide);
+    color: var(--mediumcol);
     text-align: center;
     transition: transform .1s ease-in;
+    margin-left: .5rem;
+    min-width: 80px;
 }
 
 p.navigate:hover{

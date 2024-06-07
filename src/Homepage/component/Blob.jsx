@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext} from 'react'
+import React, { useState, useEffect, useContext} from 'react'
 import snowflake from '../assets/snowflake.svg'
 import fire from '../assets/fire.svg'
 import { TempContext } from '../../App'
@@ -7,7 +7,22 @@ import '../style/blob.css'
 export default function Blob() {
     const { temperature, setTemperature, widget, setWidget } = useContext(TempContext)
     const [glow, setGlow] = useState('')
-   
+    const [clickme, setClickme] = useState(8)
+    const [isClicked, setIsClicked] = useState(false)
+
+    useEffect(() => {
+        let timer;
+        if (isClicked) {
+          timer = setTimeout(() => {
+            setClickme(8);
+            setIsClicked(false);
+          }, 10000);
+        }
+        return () => clearTimeout(timer);
+      }, [isClicked]);
+
+
+
     function toggleblob(){
         setGlow('blobglow')
     }
@@ -18,14 +33,16 @@ export default function Blob() {
 
     function themeChange(){
         setTemperature(temperature === 'cold'? 'warm': 'cold')
-        setWidget( widget === snowflake? fire : snowflake )    
+        setWidget( widget === snowflake? fire : snowflake )
+        setClickme(0);
+        setIsClicked(true); 
     }
 
   return (
     <div className='blobcon'>
         <div className="theme-blobcon" onClick={themeChange} onMouseEnter={toggleblob} onMouseLeave={toggleleave}> 
             <img src= {widget} alt="theme-button" className="theme-icon"/> 
-            <p className="clickme">CLICK ME!</p>
+            <p className="clickme" style={{ opacity: clickme }}>CLICK ME!</p>
         </div>
             <svg className={`blob slow ${glow}`}  id="visual" viewBox="0 0 900 900" width="900" height="900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"><g transform="translate(337.5 438)">
                 <path d="M450 6C450 172 225 344 56.2 344C-112.5 344 -225 172 -225 6C-225 -160 -112.5 -320 56.2 -320C225 -320 450 -160 450 6"></path></g>

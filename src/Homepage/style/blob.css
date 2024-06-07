@@ -1,8 +1,3 @@
-*{
-    --borderguide: 1px solid white;
-    --borderguide: none;
-}
-
 .blobcon{
     border: var(--borderguide);
     position: relative;
@@ -13,7 +8,7 @@
     z-index: 10;
     width: clamp(250px, 80vw, 500px);
     height: 50vh;
-
+    transform: translateY(-1rem);
 }
 
 @keyframes fadein {
@@ -22,7 +17,7 @@
         opacity: 0;
     }
     100%{
-        transform: translateY(-0%) scale(1);
+        transform: translateY(-8%) scale(1);
         opacity: 1;
     }
 }
@@ -53,6 +48,7 @@
 
 p.clickme{
     font-weight: 800;
+    transition: opacity .8s ease;
 }
 
 @keyframes wobble {
