@@ -30,12 +30,12 @@
     border: var(--borderguide);
     color: var(--mediumcol);
     text-align: center;
-    transition: transform .1s ease-in;
+    transition: transform .3s ease-in;
     margin-left: .5rem;
     min-width: 80px;
 }
 
-p.navigate:hover{
+.navigate:hover{
     transform: scale(1.05);
     font-weight: 800;
 }

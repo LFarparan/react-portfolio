@@ -6,7 +6,7 @@ import '../style/contact.css'
 
 
 export default function Contact() {
-    const [hovertext, setHovertext] = useState('Github')
+    const [hovertext, setHovertext] = useState(' ')
   return (
         <div className="contactbox">
             <div className="contactcon">
