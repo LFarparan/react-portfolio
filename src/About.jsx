@@ -32,7 +32,7 @@ export default function About(){
         </div>
         <div className="contactbox">
 
-            <h2 className="aboutme"> CONTACT ME </h2>
+            <h2 className="contactme"> CONTACT ME </h2>
 
             <div className='contactoptions'>
                 <span className='contactinfo'>
