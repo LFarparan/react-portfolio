@@ -3,16 +3,15 @@ import './About/style/about.css'
 import cold from './About/assets/coldportrait.png'
 import warm from './About/assets/warmportrait.png'
 import { TempContext } from './App'
+import Contact from './About/components/Contact'
 
 export default function About(){
     const {temperature} = useContext(TempContext)
     const [portrait, setPortrait] = useState(warm)
-
+    
     useEffect(()=>{
         setPortrait(portrait === cold ? warm : cold)
     }, [temperature])
-
-
 
   return (
     <div className='about'>
@@ -30,25 +29,7 @@ export default function About(){
                 </a>
             </div>
         </div>
-        <div className="contactbox">
-
-            <h2 className="contactme"> CONTACT ME </h2>
-
-            <div className='contactoptions'>
-                <span className='contactinfo'>
-                    Email: &nbsp;&nbsp;  aguinaldo.farparan@gmail.com <br />
-                    Mobile: &nbsp; </span> <p className='mobile'> 0976 136 1311 </p> 
-                
-                <a href="https://github.com/LFarparan">
-                    <div className="option github">
-                        <img src="" alt="" />
-                    </div>
-                </a>
-                
-               
-                
-            </div>
-        </div>
+        <Contact/>
     </div>
   )
 }

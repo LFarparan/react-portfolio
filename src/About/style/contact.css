@@ -1,0 +1,86 @@
+/* *{
+    --borderguide: 1px solid white;
+} */
+
+.contactbox{
+    width: clamp(350px, 55vw, 600px);
+    padding: max(1rem, .25vw) 0;
+    display: flex;
+    justify-content: center;
+    border: var(--borderguide);
+}
+
+.contactcon{
+    width: clamp(350px, 50vw, 500px);
+    padding: max(1rem, .25vw) 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    background-image: linear-gradient(
+        180deg,
+        rgba(68, 68, 68, 0.3),
+        rgba(206, 206, 206, 0.3)
+    );
+}
+
+h2.contactme{
+    font-weight: 800;
+    border: var(--borderguide);
+    margin-top: 2rem;
+    transition: transform .4s ease;
+}
+
+.contactoptions{
+    border: var(--borderguide);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: .6rem 0 1.5rem 0;
+    font-size: max(.9rem, 1.1vw);
+}
+
+h3.social{
+    font-size: 1rem;
+}
+
+.socialicons{
+    display: flex;
+    gap: .5rem;
+    margin: .7rem;
+
+}
+
+.github, .linkedin, .gmail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: var(--borderguide);
+    width: 60px;
+}
+
+#github, #linkedin, #gmail {
+    width: 40px;
+    filter: var(--themenew);
+    transition: transform .8s ease, filter .8s ease;
+
+}
+
+#gmail:hover, #github:hover, #linkedin:hover {
+    transform: scale(1.1);
+    filter: var(--theme);
+}
+
+.hovertext{
+    border: var(--borderguide);
+    min-height: 23px;
+    font-size: .8rem;
+    opacity: .9;
+}
+
+.aboutme:hover, .contactme:hover{
+    transform: translateY(-10%);
+}

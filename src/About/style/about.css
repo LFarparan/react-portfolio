@@ -39,11 +39,13 @@ h2.aboutme{
     font-weight: 800;
     margin: 1rem 0;
     border: var(--borderguide);
+    transition: transform .4s ease;
+
 }
 
 p.aboutmedescription{
     border: var(--borderguide);
-    margin-bottom: .5rem;
+    margin-bottom: .8rem;
 }
 
 a.resume{
@@ -60,27 +62,4 @@ p.resumep{
 p.resumep:hover{
     transform: scale(1.05);
     font-weight: 800;
-}
-
-.contactbox{
-    width: clamp(350px, 55vw, 600px);
-    padding: max(1rem, .25vw) 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-h2.contactme{
-    font-weight: 800;
-    margin: 1rem 2rem;
-    border: var(--borderguide);
-}
-
-.contactoptions{
-    margin: 0 1rem;
-    border: var(--borderguide);
-}
-
-p.mobile{
-    transform: translate( 4.2rem, -1.3rem);
 }
