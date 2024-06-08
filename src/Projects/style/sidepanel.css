@@ -9,7 +9,6 @@
     background-color: #23232e;
     z-index: 80;
     transition: width .2s ease;
-    box-shadow: 10px 0px 20px  rgba(100, 100, 100, 0.1);
 }
 
 .icondiv{
@@ -62,6 +61,7 @@ p.navtext{
         position: sticky;
         width: 5rem;
         min-height: 100vh;
+        box-shadow: 10px 0px 15px  rgba(100, 100, 100, 0.09);
         flex-direction: column;
         padding-top: .8rem;
         position: sticky;
@@ -133,6 +133,7 @@ p.navtext{
         min-height: 4.8rem;
         justify-content: space-around;
         align-items: center;
+        box-shadow: 0px 0 10px 15px  rgba(100, 100, 100, 0.09);
     }
 
     .unicon{
