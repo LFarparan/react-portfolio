@@ -6,7 +6,7 @@ export default function Homepage() {
 
   return (
     <>
-      <div className='header'>
+      <section id='header'>
         <div className='navigation'>
           <a href="#projects" className="navigate">PROJECTS</a>
           <a href="#about" className="navigate">ABOUT ME</a>
@@ -26,6 +26,9 @@ export default function Homepage() {
           </div>
         </div>
         <div className='headfoot'> </div>
+      </section>
+      <div className="fillerspace">
+        
       </div>
       
     </>

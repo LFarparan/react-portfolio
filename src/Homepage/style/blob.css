@@ -40,7 +40,7 @@
 
 .theme-icon{
     filter: var(--theme);
-    width: max(180px ,16vw);
+    width: max(170px ,16vw);
     user-select: none;
     -webkit-user-drag: none;
 }

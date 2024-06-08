@@ -2,13 +2,13 @@
     --borderguide: 1px solid white;
 } */
 
-.header{
+#header{
     background-image: var(--bg1);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
     width: 100vw;
-    min-height: 100vh;
+    min-height: calc(100vh-1rem);
     border: var(--borderguide);
     bottom: 3rem;
     z-index: 10;
@@ -105,6 +105,7 @@ p.greetdescription{
     animation: wavefade 16s infinite;
     transition: transform ease-in-out;
     position: absolute;
+    min-height: 17vh;
 }
 
 @keyframes wavefade {
@@ -133,4 +134,10 @@ p.greetdescription{
         background-image: var(--img1);
         transform: translateY(-35%);
     }
+}
+
+.fillerspace{
+    width: 100%;
+    height: 40vh;
+    background-color: var(--blackcol);
 }

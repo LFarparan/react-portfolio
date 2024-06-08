@@ -1,5 +1,10 @@
-.projects{
-    min-height: 100vh;
+/* *{
+    --borderguide: 1px solid white;
+} */
+
+section#projects{
+    min-height: 300vh;
     background-color: var(--blackcol);
     transform: translateY(-5rem);
+    position: relative;
 }

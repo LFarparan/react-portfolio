@@ -22,18 +22,27 @@ red         #EC5B64
   color: #f3f3f3;
 }
 
-#root{
-  background-color: var(--blackcol);
-}
-
 html{
   scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+  width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #4e4e4e;
+  border-radius: 5px;
 }
 
 .cold, .warm{
   overflow-x: clip;
   position: relative;
-  background-color: var(--blackcol);
+  background-image: var(--bg1);
 }
 
 .cold{
@@ -45,11 +54,12 @@ html{
   --img1 : url('./Homepage/assets/coldwave1.svg');
   --img2 : url('./Homepage/assets/coldwave2.svg');
   --img3 : url('./Homepage/assets/coldwave3.svg');
-  --bg1 : url('./Homepage/assets/coldbackground.png');
+  --bg1 : linear-gradient( 90deg, rgb(17, 23, 30), rgb(9, 18, 58));
   --border1: url('./Homepage/assets/coldborder1.svg');
   --border2: url('./Homepage/assets/coldborder2.svg');
   --border3: url('./Homepage/assets/coldborder3.svg');
   --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
+  --themecon : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(80%) contrast(10%);
   --themenew :  invert(64%) sepia(82%) saturate(1394%) hue-rotate(152deg) brightness(90%) contrast(96%);
 }
 
@@ -62,11 +72,12 @@ html{
   --img1 : url('./Homepage/assets/warmwave1.svg');
   --img2 : url('./Homepage/assets/warmwave2.svg');
   --img3 : url('./Homepage/assets/warmwave3.svg');
-  --bg1 : url('./Homepage/assets/warmbackground.png');
+  --bg1 : linear-gradient( 90deg, rgb(10, 5, 6), rgb(47, 6, 63));;
   --border1: url('./Homepage/assets/warmborder1.svg');
   --border2: url('./Homepage/assets/warmborder2.svg');
   --border3: url('./Homepage/assets/warmborder3.svg');
   --theme : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(110%) contrast(103%);
+  --themecon : invert(92%) sepia(1%) saturate(1618%) hue-rotate(141deg) brightness(80%) contrast(10%);
   --themenew :  invert(55%) sepia(13%) saturate(2480%) hue-rotate(314deg) brightness(107%) contrast(97%);
 }
 
@@ -74,6 +85,10 @@ body{
   overflow-x: hidden;
   width: 100vw;
   background-color: var(--darkcol);
+}
+
+a{
+  text-decoration: none;
 }
 
 .themecon{
