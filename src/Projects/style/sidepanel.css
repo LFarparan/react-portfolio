@@ -36,12 +36,14 @@
 .home-icon,
 .about-icon{
     width: 2.5rem;
-    filter: var(--themecon)
+    filter: var(--themecon);
+    transition: filter .3s ease;
 }
 
 .project-icon{
     width: 2.25rem;
     filter: var(--themecon);
+    transition: filter .3s ease;
 }
 
 .icondiv:hover .home-icon,

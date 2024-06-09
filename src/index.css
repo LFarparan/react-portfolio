@@ -117,3 +117,9 @@ a{
   user-select: none;
   -webkit-user-drag: none;
 }
+
+.fillerspace{
+  width: 100%;
+  height: calc(40vh - 1.6rem);
+  background-color: var(--blackcol);
+}

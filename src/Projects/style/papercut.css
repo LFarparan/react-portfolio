@@ -1,0 +1,145 @@
+/* *{
+    --borderguide: 1px solid white;
+} */
+
+
+section#project1{
+    border: var(--borderguide);
+    min-height: 120vh;
+    position: absolute;
+    top: 10rem;
+    padding-top: 3rem;
+}
+
+.p1con{
+    border: var(--borderguide);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.proj1part1{
+    display: grid;
+    gap: 1rem;
+    grid-template:  repeat(2, 115px) 159px  / repeat(2, 160px);
+}
+
+.M, 
+.E, 
+.R, 
+.N {
+    width: calc(175px - 1rem);
+    grid-row: span 1;
+    grid-column: span 1;
+    animation: scaleAppear ease;
+    animation-timeline: view();
+    opacity: 0;
+    transform: scale(0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid;
+    border-image: linear-gradient(to right, var(--lightcol), darkorchid) 1;
+    border-radius: 15px;
+  }
+
+@keyframes scaleAppear {
+    10%{
+        transform: scale(.8); opacity: .5;
+    }
+    18%{
+        transform: scale(1); opacity: 1;
+    }
+    70%{
+        transform: scale(1); opacity: 1;
+    }
+    100%{
+        transform: scale(.8); opacity: .5;
+    }
+}
+
+.mongo{
+    width: 70%;
+    filter: var(--themenew) hue-rotate(10deg) brightness(120%);
+}
+
+.express{
+    width: 50%;
+    filter: var(--themenew);
+}
+
+.react{
+    width: 55%;
+    animation: spin 5s linear infinite;
+    filter: var(--themenew) hue-rotate(10deg) brightness(120%);
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.node{
+    width: 90%;
+    filter: var(--themenew) hue-rotate(10deg) brightness(120%);
+}
+
+
+
+.home1con{
+    border: var(--borderguide);
+    grid-row: span 2;
+    grid-column: span 2;
+    width: calc(350px - 1rem);
+    display: flex;
+    justify-content: center;
+    background-color: var(--lightcol);
+    border-radius: 15px;
+}
+
+.screen{
+    background-color: rgb(56, 56, 56);
+    display: flex;
+    justify-content: center;
+    padding: 1rem 1rem 0 1rem;
+    margin: 2.5rem 2rem 0 2rem;
+    border-radius: 10px 10px 0 0;
+}
+
+.papercuthome{
+    width: calc(100% - 1rem);
+    
+}
+
+.proj1part2{
+    border: var(--borderguide);
+    width: clamp(340px, 30vw, 600px);
+    display: grid;
+    gap: 1rem;
+    grid-template: 159px repeat(2, 115px) / repeat(2, 160px);
+}
+
+.proj1description{
+    border: var(--borderguide);
+    width: clamp(340px, 70vw, 400px);
+}
+
+
+
+
+/* Large screens */
+@media only screen and (min-width: 800px) {
+    section#project1{
+        width: calc(100vw - 7rem);
+        margin-left: 6rem;
+    }   
+}
+
+/* Small screens */
+@media only screen and (max-width: 799px) {
+    section#project1{
+        width: calc(100vw - 2rem);
+        margin: 0 1rem;
+    }   
+}

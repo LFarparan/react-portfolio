@@ -8,3 +8,27 @@ section#projects{
     transform: translateY(-5rem);
     position: relative;
 }
+
+h1.projectstext{
+    font-weight: 800;
+    position: absolute;
+    top:  4rem;
+    font-size: max(1.8rem, 3vw);
+    background: linear-gradient(150deg, var(--darkcol), var(--lightcol));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Large screens */
+@media only screen and (min-width: 800px) {
+    h1.projectstext{
+        margin-left: 7rem;
+    }   
+}
+
+/* Small screens */
+@media only screen and (max-width: 799px) {
+    h1.projectstext{
+        margin-left: 5rem;
+    } 
+}
