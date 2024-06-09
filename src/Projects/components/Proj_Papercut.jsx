@@ -56,7 +56,7 @@ export default function Papercut() {
                 <p className='descriptiontext'> 
                     &nbsp;&nbsp;&nbsp;&nbsp; It is a React website that makes HTTP 
                     requests to an API I built using Node.js, Express, and MongoDB Atlas.
-                    Then, was deployed it on Vercel.
+                    Both were deployed on Vercel.
                 </p>
             </div>
             
