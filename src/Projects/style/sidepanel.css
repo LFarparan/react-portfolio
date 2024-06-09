@@ -20,7 +20,7 @@
 }
 
 .icondiv:hover{
-    background-color: #141418;
+    background-color: rgb(20, 20, 24);
     transform: scale(1.1);
 }
 

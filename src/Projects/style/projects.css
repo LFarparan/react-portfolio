@@ -14,10 +14,36 @@ h1.projectstext{
     position: absolute;
     top:  4rem;
     font-size: max(1.8rem, 3vw);
-    background: linear-gradient(150deg, var(--darkcol), var(--lightcol));
+    /* background: linear-gradient(150deg, var(--darkcol), var(--lightcol));
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent; */
 }
+
+.stack{
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.mongotext{
+    color: #e9ff78;
+}
+
+.expresstext{
+    color: rgb(239, 132, 239);
+}
+
+.reacttext{
+    color: #75bee5;
+}
+
+.nodetext{
+    color: #78ffa7;
+}
+
+.verceltext{
+    color: #e6a461;
+}
+
 
 /* Large screens */
 @media only screen and (min-width: 800px) {
