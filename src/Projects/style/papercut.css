@@ -5,7 +5,7 @@
 
 section#project1{
     border: var(--borderguide);
-    min-height: 120vh;
+    min-height: 100vh;
     position: absolute;
     top: 10rem;
     padding-top: 3rem;
