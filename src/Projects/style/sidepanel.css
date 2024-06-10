@@ -54,6 +54,7 @@
 
 p.navtext{
     display: none;
+    animation: blockEffect .5s ease forwards;
 }
 
 
@@ -114,6 +115,15 @@ p.navtext{
         display: block;
     }
 
+    @keyframes blockEffect {
+        from{
+            transform: scale(.5); opacity: 0;
+        }
+        to{
+            transform: scale(1); opacity: 1;
+        }
+    }
+
     .icondiv{
         border: var(--borderguide);
         display: flex;
@@ -149,5 +159,21 @@ p.navtext{
         justify-content: center;
         width: 18vw;
         min-height: 4.8rem;
+        flex-direction: column;
+    }
+
+    .home-icon,
+    .about-icon{
+        width: 1.9rem;
+    }
+
+    .project-icon{
+        width: 1.7rem;
+    }
+
+    p.navtext{
+        display: block;
+        font-size: .7rem;
+        transform: translateY(-15px);
     }
 }
