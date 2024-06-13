@@ -3,8 +3,114 @@
 } */
 
 section#project2{
-    background-color: rgb(49, 49, 49);
+    background-color: #5e6166;
     width: 100vw;
-    min-height: 100vh;
-    padding: 0 0 06rem;
+    min-height: 120vh;
+}
+
+.divider{
+    width: 100vw;
+    max-height: 45vh;
+}
+
+.dividerz{
+    width: 100vw;
+}
+
+
+.p2content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.p2description{
+    border: var(--borderguide);
+    opacity: 0;
+    animation: slide2;
+    animation-timeline: view();
+}
+
+@keyframes slide2 {
+    0%{
+        transform: translateX(-8rem);
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.graphicon{
+    border: 1px solid rgba(255, 255, 255, 0);
+    max-width: 500px;
+    position: relative;
+    opacity: 0;
+    animation: slide 3s ease;
+    animation-timeline: view();
+}
+
+@keyframes slide {
+    0%{
+        transform: translateX(8rem);
+        opacity: 0;
+    }
+    30%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+    100%{
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+.graphic{
+    width: 500px;
+}
+
+.pokemartstore{
+    position: absolute;
+    top: 1.2rem;
+    width: 369px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+/* large screens */
+@media only screen and (min-width: 800px) {
+    .p2content{
+        padding-left: 6rem;
+    }
+}
+
+
+/* small screens */
+@media only screen and (max-width: 799px) {
+    section#project2{
+        min-height: 110vh;
+    }
+
+    .graphicon{
+        max-width: 350px;
+    }
+    
+    .graphic{
+        width: 350px;
+    }
+    
+    .pokemartstore{
+        position: absolute;
+        top: .8rem;
+        width: 258px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
 }

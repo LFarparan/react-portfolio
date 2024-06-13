@@ -59,11 +59,15 @@ h1.projectstext{
 
 /* Small screens */
 @media only screen and (max-width: 799px) {
+    section#projects{
+        min-height: 400vh;
+    }
     h1.projectstext{
         margin-left: 5rem;
     } 
     .projectscon{
         position: relative;
     }
+    
     
 }

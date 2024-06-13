@@ -181,7 +181,8 @@ section#project1{
 }
 
 .linktosite{
-    background-color: var(--blackcol);
+    background-color: transparent;
+    width: 8rem;
     padding: .5rem;
     border: 2px solid var(--lightcol);
     border-radius: 10px;
