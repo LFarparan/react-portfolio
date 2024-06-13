@@ -17,7 +17,7 @@ export default function Homepage() {
             <h1 className='name'>LEONARD FARPARAN</h1>
             <p className="greetdescription">
               I'm an aspiring Web developer who specializes on JavaScript 
-              libraries and frameworks, and I have a keen interest in learning 
+              libraries and frameworks, and I'm very interested in learning 
               new technologies.
             </p>
           </div>

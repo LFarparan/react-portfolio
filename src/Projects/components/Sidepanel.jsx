@@ -28,19 +28,22 @@ export default function Sidepanel() {
                     <p className='navtext'> PaperCut </p>
                 </div>
             </a>
-            
-            <div className='icondiv'>
-                <div className="icontainer"> 
-                    <img src={project} alt="project-icon" className='project-icon'/>
+            <a href='#project2'>
+                <div className='icondiv'>
+                    <div className="icontainer"> 
+                        <img src={project} alt="project-icon" className='project-icon'/>
+                    </div>
+                    <p className='navtext'> PokeMart </p>
                 </div>
-                <p className='navtext'> PokeMart </p>
-            </div>
-            <div className='icondiv'>
-                <div className="icontainer"> 
-                    <img src={project} alt="project-icon" className='project-icon'/>
+            </a>
+            <a href='#project3'>
+                <div className='icondiv'>
+                    <div className="icontainer"> 
+                        <img src={project} alt="project-icon" className='project-icon'/>
+                    </div>
+                    <p className='navtext'> R.P.S. </p>
                 </div>
-                <p className='navtext'> R.P.S. </p>
-            </div>
+            </a>
             <a href="#about">
                 <div className='icondiv'>
                     <div className="icontainer"> 
@@ -50,7 +53,6 @@ export default function Sidepanel() {
                 </div>
             </a>
         </nav>
-        <Papercut/>
     </>
   )
 }

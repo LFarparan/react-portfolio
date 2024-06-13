@@ -1,6 +1,7 @@
 import React from 'react'
 import '../style/papercut.css'
 import papercuthome from '../assets/projectmern.png'
+import papercutview from '../assets/papercutview.png'
 import mongo from '../assets/mongo.png'
 import express from '../assets/express.png'
 import react from '../assets/react.png'
@@ -34,9 +35,9 @@ export default function Papercut() {
                 <div className="N">
                     <img src={node} alt="node" className='node'/>
                 </div>
-                <div className="home1con">
-                    <div className="screen">
-                        <img src={papercuthome} alt="papercuthome" className='papercuthome'/>
+                <div className="home2con">
+                    <div className="papercutviewcon">
+                        <img src={papercutview} alt="papercutview" className='papercutview'/>
                     </div>
                 </div>
             </div>
@@ -58,8 +59,15 @@ export default function Papercut() {
                     requests to an API I built using Node.js, Express, and MongoDB Atlas.
                     Both were deployed on Vercel.
                 </p>
+                <div className="projectlinks">
+                    <a href="https://papercut-ruby.vercel.app/" target='_blank'>
+                        <button type='button' className="linktosite"> VISIT PROJECT </button>
+                    </a>
+                    <a href="https://github.com/LFarparan/MERNstack" target='_blank' >
+                        <button type='button' className="linktosite"> VISIT REPO </button>
+                    </a>
+                </div>
             </div>
-            
         </div>
     </section>
   )

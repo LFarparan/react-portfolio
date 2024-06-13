@@ -23,6 +23,7 @@ export default function About(){
                     Hi!  I am a fresh BSIT graduate from PLM and currently
                     looking for an entry level job in web development or any
                     related roles to grow and acquire new set of skills.
+                    (Portfolio is still a work in progress)
                 </p>
                 <a className='resume' href="https://www.canva.com/design/DAGHMedsDkA/1DydZpsarr3dPFk7Y2d5qQ/view?utm_content=DAGHMedsDkA&utm_campaign=designshare&utm_medium=link&utm_source=editor" target="_blank"> 
                     <p className='resumep'> View resume </p>

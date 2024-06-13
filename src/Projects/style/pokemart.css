@@ -1,0 +1,10 @@
+/* *{
+    --borderguide: 1px solid white;
+} */
+
+section#project2{
+    background-color: rgb(49, 49, 49);
+    width: 100vw;
+    min-height: 100vh;
+    padding: 0 0 06rem;
+}

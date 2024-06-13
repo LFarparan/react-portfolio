@@ -7,13 +7,13 @@ section#projects{
     background-color: var(--blackcol);
     transform: translateY(-5rem);
     position: relative;
+    border: var(--borderguide);
 }
 
 h1.projectstext{
     font-weight: 800;
-    position: absolute;
-    top:  4rem;
     font-size: max(1.8rem, 3vw);
+    border: var(--borderguide);
     /* background: linear-gradient(150deg, var(--darkcol), var(--lightcol));
     background-clip: text;
     -webkit-text-fill-color: transparent; */
@@ -49,7 +49,12 @@ h1.projectstext{
 @media only screen and (min-width: 800px) {
     h1.projectstext{
         margin-left: 7rem;
-    }   
+    } 
+    .projectscon{
+        position: relative;
+        bottom: 38rem;
+    }
+    
 }
 
 /* Small screens */
@@ -57,4 +62,8 @@ h1.projectstext{
     h1.projectstext{
         margin-left: 5rem;
     } 
+    .projectscon{
+        position: relative;
+    }
+    
 }
