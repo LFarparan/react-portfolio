@@ -108,16 +108,16 @@ p.navtext{
             transform: translateX(-100%);
             opacity: 0;
         }
-        10%{
+        14%{
             transform: translateX(-100%);
             opacity: 0;
         }
-        15%{
+        20%{
             transform: translateX(-100%);
             opacity: .75;
         }
     
-        16%{
+        21%{
             transform: translateX(0%);
             opacity: 1;
         }
